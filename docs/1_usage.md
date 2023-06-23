@@ -56,15 +56,15 @@ Learn how to ReVanced CLI.
       -d device-name \
       -o patched-output.apk \
       -b revanced-patches.jar \
-      -e vanced-microg-support \
+      -e gms-core-support \
       --mount
   ```
 
 > **Note**:
 >
 > - If you want to exclude patches, you can use the option `-e`. In the case of YouTube, you can exclude
-    the `vanced-microg-support` patch from [ReVanced Patches](https://github.com/revanced/revanced-patches) with the
-    option `-e vanced-microg-support` when mounting for example.
+    the `gms-core-support` patch from [ReVanced Patches](https://github.com/revanced/revanced-patches) with the
+    option `-e gms-core-support` when mounting for example.
 >
 > - Some patches from [ReVanced Patches](https://github.com/revanced/revanced-patches) also might require
     [ReVanced Integrations](https://github.com/revanced/revanced-integrations). Supply them with the option `-m`.
