@@ -26,6 +26,14 @@ repositories {
             password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
         }
     }
+    maven {
+        // A repository must be speficied for some reason. "registry" is a dummy.
+        url = uri("https://maven.pkg.github.com/zjns/registry")
+        credentials {
+            username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
+            password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
+        }
+    }
 }
 
 dependencies {
@@ -64,6 +72,7 @@ tasks {
             exclude(dependency("org.jetbrains.kotlin:.*"))
             exclude(dependency("org.bouncycastle:.*"))
             exclude(dependency("app.revanced:.*"))
+            exclude(dependency("kofua.app.revanced:.*"))
         }
     }
 

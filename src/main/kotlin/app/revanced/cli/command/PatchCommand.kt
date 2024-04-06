@@ -12,6 +12,7 @@ import app.revanced.patcher.PatcherConfig
 import kotlinx.coroutines.runBlocking
 import picocli.CommandLine
 import picocli.CommandLine.Help.Visibility.ALWAYS
+import picocli.CommandLine.ITypeConverter
 import picocli.CommandLine.Model.CommandSpec
 import picocli.CommandLine.Spec
 import java.io.File
@@ -173,6 +174,14 @@ internal object PatchCommand : Runnable {
     )
     private var warn: Boolean = false
 
+    @CommandLine.Option(
+        names = ["--signing-levels"],
+        description = ["Output apk signing levels, eg. \"1,2,3\", empty as default."],
+        converter = [SignLevelsConverter::class],
+        arity = "0..1",
+    )
+    private var signLevels = listOf<Int>()
+
     @CommandLine.Parameters(
         description = ["APK file to be patched."],
         arity = "1..1",
@@ -279,6 +288,7 @@ internal object PatchCommand : Runnable {
                 aaptBinaryPath?.path,
                 patcherTemporaryFilesPath.absolutePath,
                 true,
+                shortenResourcePaths = true,
             ),
         ).use { patcher ->
             val filteredPatches =
@@ -328,6 +338,7 @@ internal object PatchCommand : Runnable {
                         keyStoreEntryAlias,
                         keyStoreEntryPassword,
                     ),
+                    signLevels,
                 )
             } else {
                 patchedApkFile.copyTo(outputFilePath, overwrite = true)
@@ -417,5 +428,11 @@ internal object PatchCommand : Runnable {
                 "Failed to purge resource cache directory"
             }
         logger.info(result)
+    }
+
+    class SignLevelsConverter : ITypeConverter<List<Int>> {
+        override fun convert(value: String): List<Int> {
+            return value.split(",").map { it.toInt() }
+        }
     }
 }
