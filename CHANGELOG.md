@@ -1,3 +1,97 @@
+# [3.0.0](https://github.com/zjns/revanced-cli/compare/v2.21.5...v3.0.0) (2024-04-09)
+
+
+### Bug Fixes
+
+* Add missing punctuation in command description ([8210351](https://github.com/zjns/revanced-cli/commit/821035107d7264580275f395e9e3fcef91394afd))
+* also delete temporary files when uninstalling ([52c3be2](https://github.com/zjns/revanced-cli/commit/52c3be23f2915dccaee7f9941413c8f81e14acc8))
+* Bump dependencies to support BCS keystore ([1c10a77](https://github.com/zjns/revanced-cli/commit/1c10a7760d76ea850260ca49b448be7ad121de44))
+* check for package compatibility at first ([9fe5a0b](https://github.com/zjns/revanced-cli/commit/9fe5a0b6d93304f630436ed0e954723d9a27b0f6))
+* Check, if mounting is possible ([3e13fb5](https://github.com/zjns/revanced-cli/commit/3e13fb5d56eb2a90c2a4a1ddfc05852b1f70add5))
+* Copy APK to output path when it is not being signed ([366f400](https://github.com/zjns/revanced-cli/commit/366f400c5a46491f3f262c7ff4b0df1ae3721f74))
+* Correct warning message ([ba573f7](https://github.com/zjns/revanced-cli/commit/ba573f73d0e310fdeb8be2831fd40a7188473fff))
+* Create options if it does not exist when updating them ([ca809f0](https://github.com/zjns/revanced-cli/commit/ca809f0948379e3a825f24d7a49aba8b6b8767d1))
+* Delete temporal files if it exists ([a022feb](https://github.com/zjns/revanced-cli/commit/a022febd0c70807ddc3fa9948207a2a70d5191da))
+* delete temporary files after root installation ([a3d8705](https://github.com/zjns/revanced-cli/commit/a3d8705e89732a0dd4f51de28c405b6af13c8633))
+* do not delete output file ([0f3e090](https://github.com/zjns/revanced-cli/commit/0f3e090418771e951dfd15e5c193421f72cbe459))
+* do not filter explicitly included patches ([a3d8f00](https://github.com/zjns/revanced-cli/commit/a3d8f004ec405f696d99d96c74ca41b573ecf425))
+* Do not sign if mounting ([578e16b](https://github.com/zjns/revanced-cli/commit/578e16b099fddfd2bb56accb225d04dfcd409b0c))
+* do not use absolute path from custom AAPT2 binary option ([a9c2a5f](https://github.com/zjns/revanced-cli/commit/a9c2a5f096627dbbf8ab1b8da26fb14529ce6bc3))
+* Filter logs correctly ([43fc20d](https://github.com/zjns/revanced-cli/commit/43fc20d90e0a694b231b17bb7d9ecfa22bb5d9a0))
+* filtration of patches malfunctioning ([2d5a7fd](https://github.com/zjns/revanced-cli/commit/2d5a7fdf1eb2e13f5013a790b03f09851b167fe0))
+* fix running commands not running ([2c7fcaf](https://github.com/zjns/revanced-cli/commit/2c7fcaf4add65a12052afc5bef779dbc73debd69))
+* Fix typo ([#300](https://github.com/zjns/revanced-cli/issues/300)) ([9d96bb7](https://github.com/zjns/revanced-cli/commit/9d96bb7b4cc4538da416db50bd689af1a632fc45))
+* format patches input ([bbb1a63](https://github.com/zjns/revanced-cli/commit/bbb1a63abd80dcbecdcf362158c0429cf3e6318f))
+* Log correct options command ([#262](https://github.com/zjns/revanced-cli/issues/262)) ([96c196d](https://github.com/zjns/revanced-cli/commit/96c196dcb14e37ad91b751af61ee8382547c1ca3))
+* Log logs with levels over warning to error output stream ([075f6ad](https://github.com/zjns/revanced-cli/commit/075f6ad56528a667dca1f0bed704cf7e5381026f))
+* Move file to output even when mounting ([59dfc98](https://github.com/zjns/revanced-cli/commit/59dfc988e351374eb718923d19bd9bdd94e8d3c0))
+* only check once for patch options ([11c3a6c](https://github.com/zjns/revanced-cli/commit/11c3a6cfd4fe59ba5d703358634a1853e1cc22a5))
+* Only open files for reading and writing if writeable ([3846f72](https://github.com/zjns/revanced-cli/commit/3846f721ca015ab39a7e4b8d3f3d61163a6f1650))
+* Only set options for filtered patches ([64d9127](https://github.com/zjns/revanced-cli/commit/64d9127291ea9a8abe21a0e82721721495094472))
+* print original instead of kebab cased names ([5eaad33](https://github.com/zjns/revanced-cli/commit/5eaad33dc1fbd24c36e1498f04e21d068e85f53e))
+* print stack trace when a patch failed ([924c1f8](https://github.com/zjns/revanced-cli/commit/924c1f80ec0d17a3bdc07a0fb2015e44c49162e4))
+* Show path for missing files instead of just the name ([f0f3e56](https://github.com/zjns/revanced-cli/commit/f0f3e5614b99b34391e0492177706f9c09781cad))
+* Sign APKs correctly ([5ff105c](https://github.com/zjns/revanced-cli/commit/5ff105cf6b3fac9cd12478efd10caf90d1ecf589))
+* specify correct class containing entry-point ([1fcc591](https://github.com/zjns/revanced-cli/commit/1fcc591222ab67112f2b78174a8b94106846838c))
+* Use correct option description ([45a2ffa](https://github.com/zjns/revanced-cli/commit/45a2ffa2dd95ee8ac3c4d466463c9a5b869b8da1))
+* use correct option name ([f8972ea](https://github.com/zjns/revanced-cli/commit/f8972eac3e5ee0a4a186c12cbe711925656d657b))
+* Use punctuation in option descriptions ([da4469f](https://github.com/zjns/revanced-cli/commit/da4469f402c26ad95898404236b0acf0202907e2))
+
+
+* refactor!: restructure code ([07da528](https://github.com/zjns/revanced-cli/commit/07da528ce2223582f84bf64d2fec69714c647ddc))
+
+
+### Features
+
+* Add `list-versions` command ([a974b8e](https://github.com/zjns/revanced-cli/commit/a974b8ea80acd85f8dc472a3f93b8fd7bea08007))
+* Add function to get the most common compatible version ([77d9173](https://github.com/zjns/revanced-cli/commit/77d91735ffbbd6e733f08176f535bfd39ece0c29))
+* add install command ([0350b7f](https://github.com/zjns/revanced-cli/commit/0350b7f1a276d9dc795b22442ba4f202855ea090))
+* Add option to filter patches to be listed by package name ([50c0f98](https://github.com/zjns/revanced-cli/commit/50c0f98ce5927e07839437a2e550aa85f5a7e62d))
+* Add option to warn about patches not being found in supplied patch bundles ([e46d855](https://github.com/zjns/revanced-cli/commit/e46d85564320f46c6faa54b2d3fa7fca3fa60019))
+* add options command ([9edbbf3](https://github.com/zjns/revanced-cli/commit/9edbbf31635603f89fc7bc5dcc6c023d4cdbb5a6))
+* Add ReVanced Library subproject ([#265](https://github.com/zjns/revanced-cli/issues/265)) ([157278c](https://github.com/zjns/revanced-cli/commit/157278c9ba25f0f786c5fe58e3e23f6890107118))
+* Allow selecting first Adb device, if none supplied automatically by updating dependencies ([e7c3d64](https://github.com/zjns/revanced-cli/commit/e7c3d64bf15bf84f3853e7ef699511bf72c13767))
+* Check for missing integrations ([c93186f](https://github.com/zjns/revanced-cli/commit/c93186fb9700907e65f33442e88073783cc163de))
+* Do not format patch names ([80a8d88](https://github.com/zjns/revanced-cli/commit/80a8d88406b2b04d13dca4fb0d7d7d62e1910317))
+* Exit application with CLI exit code ([36c6a6a](https://github.com/zjns/revanced-cli/commit/36c6a6a5f75f2e770a7941b3f83f430f62de13de))
+* Extend signing API ([592dc1c](https://github.com/zjns/revanced-cli/commit/592dc1c64ae4078e73bb71eba11380b301c79dea))
+* Improve command line argument descriptions ([f9cf7d2](https://github.com/zjns/revanced-cli/commit/f9cf7d21b7f1c2f11234d604a1047b9d2b165f83))
+* Improve option descriptions ([d5ea5a0](https://github.com/zjns/revanced-cli/commit/d5ea5a0ab1cc015730063e5be94ee18bd88cc906))
+* Include or exclude patches by their index in relation to supplied patch bundles ([b2055ce](https://github.com/zjns/revanced-cli/commit/b2055ce07df3ab9a9f3f73ab17d8c2cf02f2ae62))
+* List patches which are compatible with any app ([#297](https://github.com/zjns/revanced-cli/issues/297)) ([0139dfe](https://github.com/zjns/revanced-cli/commit/0139dfe0bfa06a13f56dc03e7718aaf644029614))
+* Log saved patched APK file path ([16109bd](https://github.com/zjns/revanced-cli/commit/16109bd8bc6236debf71cbc8db78fe452b2ed00d))
+* Log stacktrace in new line ([c67e3c7](https://github.com/zjns/revanced-cli/commit/c67e3c70c7eaa514cde1bebe775a2216bc4a6074))
+* Make `--out´ option optional ([3765957](https://github.com/zjns/revanced-cli/commit/3765957043989fe7a8932a0c548566a78d04fc41))
+* minimize apk size & customize output apk signing levels ([b486e7a](https://github.com/zjns/revanced-cli/commit/b486e7a06b15f394448cab91f6710cef2dc32f0b))
+* properly make use of logging facade ([41898d7](https://github.com/zjns/revanced-cli/commit/41898d7547690e3130372414515c5645e5dc2634))
+* Remove deprecated CLI options ([48a1a39](https://github.com/zjns/revanced-cli/commit/48a1a39b94dd9121c400d28e3e93dec3fc13e3be))
+* show full package name when listing patches ([#240](https://github.com/zjns/revanced-cli/issues/240)) ([7174364](https://github.com/zjns/revanced-cli/commit/7174364ef8ef5d6ce8351a8340f9c1a5b58eac3c))
+* Simplify command description ([3b3f7c7](https://github.com/zjns/revanced-cli/commit/3b3f7c7a7a7b2795e3d1fad776f6b457f2e68c7b))
+* use better logging text ([b0e748d](https://github.com/zjns/revanced-cli/commit/b0e748daff527ee7f417b3069882e074896fc131))
+* use friendly descriptions ([3dd875d](https://github.com/zjns/revanced-cli/commit/3dd875d14cca488ade6d21bbd4cce0d481692134))
+* Use more consistent option name ([223629c](https://github.com/zjns/revanced-cli/commit/223629c663dcd94d237110e09e4e152aa03867f9))
+* use new patch naming convention ([f6c221d](https://github.com/zjns/revanced-cli/commit/f6c221d72dc43ebea00e5eba6bfa02751ae8ad77))
+* Use ReVanced Library in ReVanced CLI ([7794327](https://github.com/zjns/revanced-cli/commit/7794327a11e8a0e0f28176cd45fad797b924c45f))
+* use separate command to list patches ([b74213f](https://github.com/zjns/revanced-cli/commit/b74213f66e0d04d3a0ae6197d069631388e06580))
+* use separate command to patch ([32da961](https://github.com/zjns/revanced-cli/commit/32da961d57537e99b39fd92b625a1c73f8314bc6))
+* use separate command to uninstall ([c0cc909](https://github.com/zjns/revanced-cli/commit/c0cc90962646cfffd5e2730ae556423271a7990b))
+* use simpler log ([ba758f0](https://github.com/zjns/revanced-cli/commit/ba758f00f4ce18791439b7e72fe1ad2e7f11f8af))
+* Word log message better ([6942b22](https://github.com/zjns/revanced-cli/commit/6942b22a68de5e991987ea89882915917aec93a3))
+
+
+### Performance Improvements
+
+* Do not check, if the options file exists twice ([e3c5550](https://github.com/zjns/revanced-cli/commit/e3c55507cf52e697b9ce9d59decc1cbe4cfe5b43))
+* Use a `HashSet` to check for included and excluded patches ([616d14f](https://github.com/zjns/revanced-cli/commit/616d14f0097c1ee7ba6dc07be417590f6418e8e5))
+* Use multiple threads for writing dex files ([28648a1](https://github.com/zjns/revanced-cli/commit/28648a1c53520eef8c799504ff61a35947f878b8))
+
+
+### BREAKING CHANGES
+
+* This changes many signatures of existing APIs and adds new functions for signing
+* This changes the log handler signature
+* This introduces major changes to how ReVanced CLI is used from the command line.
+
 # [4.6.0](https://github.com/ReVanced/revanced-cli/compare/v4.5.0...v4.6.0) (2024-04-01)
 
 
